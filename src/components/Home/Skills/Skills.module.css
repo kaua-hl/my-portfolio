@@ -1,0 +1,25 @@
+.bgSkills {
+  display: flex;
+  align-items: center;
+  background: #264441;
+  height: 100vh;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+
+.skills__list {
+  color: #e1d6d0;
+}
+
+.skills__list li {
+  font-size: var(--sz-4);
+  border-bottom: 1px solid #d3a690;
+  padding: 20px 0px;
+}
+
+.skills__list li:last-child {
+  border: none;
+}

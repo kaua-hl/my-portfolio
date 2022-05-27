@@ -1,0 +1,36 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.contact h2 {
+  font-size: 7.5rem;
+  color: #081110;
+  text-align: center;
+  margin: 90px 0px 40px;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.contact__content div a {
+  display: block;
+  font-size: var(--sz-4);
+  color: #081110;
+  margin: 20px;
+}
+
+.contact__content > a {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #264441;
+  text-decoration: underline;
+  font-weight: 500;
+}

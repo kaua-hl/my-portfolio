@@ -1,0 +1,21 @@
+.textContainer {
+  display: block;
+}
+
+.textEffect {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scrollTextLeft 20s infinite linear;
+}
+
+.text__effect__text {
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+@keyframes scrollTextLeft {
+  to {
+    transform: translate3d(-150vw, 0%, 0px) scale3d(1, 1, 1);
+  }
+}

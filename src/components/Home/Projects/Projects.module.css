@@ -1,0 +1,31 @@
+.projects {
+  padding: 60px 20px 120px;
+}
+
+.projects h2 {
+  font-size: 7.5rem;
+  color: #081110;
+  text-align: center;
+  margin: 90px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 300px 0px;
+}
+
+.projects__list div:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.projects__list div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.projects__list div:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}

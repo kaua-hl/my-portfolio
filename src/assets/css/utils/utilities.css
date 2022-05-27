@@ -1,0 +1,36 @@
+.cn-1,
+.cn-2 {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.cn-2 {
+  max-width: 1000px;
+}
+
+.tn-1,
+.tn-2 {
+  font-family: var(--fm-1);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tn-1 {
+  font-family: var(--fm-1);
+  font-size: var(--sz-1);
+  color: #081110;
+  line-height: 13.3rem;
+}
+
+.tn-2 {
+  font-size: var(--sz-3);
+  color: #e1d6d0;
+}
+
+.tn-3 {
+  font-size: var(--sz-4);
+  font-family: var(--fm-2);
+  line-height: 2.18rem;
+  color: #e1d6d0;
+}

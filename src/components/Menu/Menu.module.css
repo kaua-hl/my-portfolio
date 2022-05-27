@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.menu ul {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.menu ul li {
+  color: #081110;
+  transition: 0.3s;
+}
+
+.menu li + li {
+  margin-top: 15px;
+}
+
+.menu ul li:hover {
+  color: #8daaa7;
+}

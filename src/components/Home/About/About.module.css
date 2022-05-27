@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  align-items: center;
+  background: #264441;
+  height: 100vh;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.about__content p {
+  margin-bottom: 40px;
+}
+
+.about__content a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  max-width: max-content;
+  gap: 10px;
+  font-weight: 500;
+  color: #d3a690;
+  transition: 0.3s;
+}
+
+.about__content a::after {
+  content: "→";
+  font-size: 32px;
+  position: relative;
+  top: -4px;
+  display: block;
+}
+
+.about__content a:hover {
+  gap: 20px;
+}
