@@ -15,9 +15,8 @@ function App() {
 
   return (
     <>
-      {loading ? (
-        <Loading />
-      ) : (
+      <Loading loading={loading} />
+      {!loading && (
         <>
           <Header />
           <Home />

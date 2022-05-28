@@ -8,7 +8,6 @@
 
 .contact h2 {
   font-size: 7.5rem;
-  color: #081110;
   text-align: center;
   margin: 90px 0px 40px;
 }
@@ -20,17 +19,33 @@
   height: 400px;
 }
 
+.contact__content div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contact__content div a {
-  display: block;
-  font-size: var(--sz-4);
-  color: #081110;
+  max-width: max-content;
+  font-size: 1.875rem;
+  color: var(--c-3);
   margin: 20px;
+  transition: 0.3s;
+}
+
+.contact__content div a:hover {
+  color: var(--c-5);
 }
 
 .contact__content > a {
   font-size: 24px;
   text-transform: uppercase;
-  color: #264441;
+  color: var(--c-3);
   text-decoration: underline;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact__content > a:hover {
+  color: var(--c-5);
 }

@@ -6,17 +6,19 @@ import ImageProject3 from "../../../assets/img/3.jpg";
 
 const Projects = () => {
   return (
-    <section className={`${styles.projects} cn-1`}>
-      <h2 className="tn-2">Projects</h2>
-      <div className={styles.projects__list}>
-        <div>
-          <img src={ImageProject1} />
-        </div>
-        <div>
-          <img src={ImageProject2} />
-        </div>
-        <div>
-          <img src={ImageProject3} />
+    <section className={styles.bgProjects}>
+      <div className={`${styles.projects} cn-1`}>
+        <h2 className="tn-2">Projects</h2>
+        <div className={styles.projects__list}>
+          <div>
+            <img src={ImageProject1} />
+          </div>
+          <div>
+            <img src={ImageProject2} />
+          </div>
+          <div>
+            <img src={ImageProject3} />
+          </div>
         </div>
       </div>
     </section>

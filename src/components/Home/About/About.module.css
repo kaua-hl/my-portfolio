@@ -1,7 +1,7 @@
 .about {
   display: flex;
   align-items: center;
-  background: #264441;
+  background: var(--c-3);
   height: 100vh;
 }
 
@@ -21,7 +21,7 @@
   max-width: max-content;
   gap: 10px;
   font-weight: 500;
-  color: #d3a690;
+  color: var(--c-5);
   transition: 0.3s;
 }
 

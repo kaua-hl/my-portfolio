@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,6 +12,7 @@
 
 body {
   font-family: var(--fm-2);
+  color: var(--c-2);
   font-size: 1rem;
 }
 
@@ -20,4 +25,10 @@ img {
 a {
   display: inline-block;
   color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

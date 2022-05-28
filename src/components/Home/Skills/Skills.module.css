@@ -1,7 +1,7 @@
 .bgSkills {
   display: flex;
   align-items: center;
-  background: #264441;
+  background: var(--c-3);
   height: 100vh;
 }
 
@@ -11,12 +11,12 @@
 }
 
 .skills__list {
-  color: #e1d6d0;
+  color: var(--c-4);
 }
 
 .skills__list li {
   font-size: var(--sz-4);
-  border-bottom: 1px solid #d3a690;
+  border-bottom: 1px solid var(--c-5);
   padding: 20px 0px;
 }
 

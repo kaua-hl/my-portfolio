@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Loading.module.css";
 
-const Loading = () => {
+const Loading = ({ loading }) => {
   return (
-    <div className={styles.loading}>
+    <div className={`${styles.loading} ${!loading && styles.disableLoading}`}>
       <div className={styles.loading__content}>
         <p>Kauã</p>
         <p>Hortiz</p>

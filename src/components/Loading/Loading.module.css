@@ -3,9 +3,22 @@
   align-items: center;
   justify-content: center;
   background: #152927;
+  position: fixed;
+  right: 0px;
   width: 100vw;
   height: 100vh;
-  z-index: 12;
+  z-index: 100;
+}
+
+.loading.disableLoading {
+  animation: animeOut 0.6s ease-out forwards;
+}
+
+@keyframes animeOut {
+  to {
+    display: none;
+    height: 0vh;
+  }
 }
 
 .loading__content {

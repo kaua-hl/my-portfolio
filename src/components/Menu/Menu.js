@@ -1,15 +1,28 @@
 import React from "react";
 import styles from "./Menu.module.css";
+import file from "../../assets/img/2.jpg";
 
 const Menu = () => {
   return (
     <nav className={styles.menu}>
       <ul className="tn-2">
-        <li>Sobre</li>
-        <li>Projetos</li>
-        <li>Conhecimentos</li>
-        <li>Contato</li>
-        <li>Download CV</li>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+        <li>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#knowledge">Conhecimentos</a>
+        </li>
+        <li>
+          <a href="#contact">Contato</a>
+        </li>
+        <li>
+          <a href={file} download>
+            Download CV
+          </a>
+        </li>
       </ul>
     </nav>
   );

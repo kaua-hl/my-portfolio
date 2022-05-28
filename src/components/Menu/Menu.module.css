@@ -4,13 +4,10 @@
   height: 100vh;
 }
 
-.menu ul {
+.menu ul li {
   font-size: 4rem;
   text-transform: uppercase;
-}
-
-.menu ul li {
-  color: #081110;
+  color: var(--c-2);
   transition: 0.3s;
 }
 
@@ -19,5 +16,5 @@
 }
 
 .menu ul li:hover {
-  color: #8daaa7;
+  color: var(--c-5);
 }

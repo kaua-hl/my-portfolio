@@ -11,9 +11,11 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} cn-1`}>
-      <ButtonMenu openMenu={handleChange} isMenuOpen={menuOpen} />
-      {menuOpen && <Menu />}
+    <header className={`${styles.bgHeader} ${menuOpen && styles.fixedHeader}`}>
+      <div className={`${styles.header} cn-1`}>
+        <ButtonMenu openMenu={handleChange} isMenuOpen={menuOpen} />
+        {menuOpen && <Menu />}
+      </div>
     </header>
   );
 };
