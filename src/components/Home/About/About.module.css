@@ -1,13 +1,13 @@
 .about {
   display: flex;
   align-items: center;
-  background: #264441;
+  background: var(--c-3);
   height: 100vh;
 }
 
 .about__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 }
 
 .about__content p {
@@ -21,7 +21,7 @@
   max-width: max-content;
   gap: 10px;
   font-weight: 500;
-  color: #d3a690;
+  color: var(--c-5);
   transition: 0.3s;
 }
 
@@ -35,4 +35,11 @@
 
 .about__content a:hover {
   gap: 20px;
+}
+
+@media (max-width: 890px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }

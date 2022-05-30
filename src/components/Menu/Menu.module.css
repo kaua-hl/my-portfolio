@@ -1,16 +1,11 @@
-.menu {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-}
-
-.menu ul {
-  font-size: 4rem;
-  text-transform: uppercase;
+.menu.disabled {
+  display: none;
 }
 
 .menu ul li {
-  color: #081110;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -19,5 +14,5 @@
 }
 
 .menu ul li:hover {
-  color: #8daaa7;
+  color: var(--c-5);
 }

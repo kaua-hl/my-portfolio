@@ -1,6 +1,41 @@
-.header {
-  position: relative;
-  left: 0px;
+.bgHeader {
+  position: fixed;
   top: 0px;
+  right: 0px;
+  background: #1e3d3a;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bgHeader {
+  animation: animes 0.3s forwards;
+}
+
+@keyframes animes {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+.bgHeader.disabled {
+  animation: anime 0.3s forwards;
+}
+
+@keyframes anime {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0vh;
+  }
+}
+
+.header {
   width: 100%;
 }

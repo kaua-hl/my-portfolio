@@ -10,7 +10,8 @@
 }
 
 .tn-1,
-.tn-2 {
+.tn-2,
+.tn-3 {
   font-family: var(--fm-1);
   font-weight: 400;
   text-transform: uppercase;
@@ -19,18 +20,43 @@
 .tn-1 {
   font-family: var(--fm-1);
   font-size: var(--sz-1);
-  color: #081110;
-  line-height: 13.3rem;
+  line-height: 13.5rem;
 }
 
 .tn-2 {
   font-size: var(--sz-3);
-  color: #e1d6d0;
+  color: var(--c-2);
 }
 
 .tn-3 {
+  font-size: var(--sz-3);
+  color: var(--c-4);
+}
+
+.tn-4 {
   font-size: var(--sz-4);
   font-family: var(--fm-2);
-  line-height: 2.18rem;
-  color: #e1d6d0;
+  line-height: var(--sz-5);
+  color: var(--c-4);
+}
+
+@media (max-width: 1140px) {
+  .tn-1 {
+    font-size: 10rem;
+    line-height: 11.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .tn-1 {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .tn-1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }

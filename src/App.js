@@ -1,29 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import "./assets/css/index.css";
 import Header from "./components/Header/Header";
-import Loading from "./components/Loading/Loading";
 import Home from "./pages/Home/Home";
+import useLocomotive from "./hooks/useLocomotive";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  React.useEffect(() => {
-    setTimeout(() => {
-      setLoading(!loading);
-    }, 6000);
-  }, []);
+  useLocomotive();
 
   return (
-    <>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <Header />
-          <Home />
-        </>
-      )}
-    </>
+    <div className="App">
+      <Header />
+      <Home />
+    </div>
   );
 }
 
