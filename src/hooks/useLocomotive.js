@@ -1,16 +1,17 @@
-import LocomotiveScroll from "locomotive-scroll";
-import "../assets/css/vendors/locomotive-scroll.css";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import locomotiveScroll from "locomotive-scroll";
 
-export default function useLocomotive(start) {
+const useLocomotive = () => {
   useEffect(() => {
-    const scrollEl = document.querySelector("#main-container");
-
-    const locomotiveScroll = new LocomotiveScroll({
-      el: scrollEl,
+    const scroll = new locomotiveScroll({
+      el: document.querySelector(".App"),
       smooth: true,
-      multiplier: 1,
-      class: "is-reveal",
     });
-  }, [start]);
-}
+
+    setTimeout(() => {
+      scroll.update();
+    }, 100);
+  }, []);
+};
+
+export default useLocomotive;

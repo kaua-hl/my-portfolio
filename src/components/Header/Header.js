@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.bgHeader} ${menuOpen && styles.fixedHeader}`}>
+    <header className={`${styles.bgHeader} ${!menuOpen && styles.disabled}`}>
       <div className={`${styles.header} cn-1`}>
         <ButtonMenu openMenu={handleChange} isMenuOpen={menuOpen} />
-        {menuOpen && <Menu />}
+        <Menu isMenuOpen={menuOpen} />
       </div>
     </header>
   );

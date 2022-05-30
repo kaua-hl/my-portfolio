@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Menu.module.css";
 import file from "../../assets/img/2.jpg";
 
-const Menu = () => {
+const Menu = ({ isMenuOpen }) => {
   return (
-    <nav className={styles.menu}>
+    <nav className={`${styles.menu} ${!isMenuOpen && styles.disabled} cn-1`}>
       <ul className="tn-2">
         <li>
           <a href="#about">Sobre</a>

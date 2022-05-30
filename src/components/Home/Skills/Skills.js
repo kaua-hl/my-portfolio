@@ -3,9 +3,9 @@ import styles from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <section className={styles.bgSkills}>
+    <article data-scroll-section className={styles.bgSkills}>
       <div className={`${styles.skills} cn-2`}>
-        <h2 className="tn-2">Expertise</h2>
+        <h2 className="tn-3">Expertise</h2>
         <ul className={styles.skills__list}>
           <li>HTML</li>
           <li>CSS</li>
@@ -18,7 +18,7 @@ const Skills = () => {
           <li>VUE JS</li>
         </ul>
       </div>
-    </section>
+    </article>
   );
 };
 

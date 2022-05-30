@@ -23,3 +23,13 @@
 .skills__list li:last-child {
   border: none;
 }
+
+@media (max-width: 840px) {
+  .bgSkills {
+    display: block;
+    padding: 100px 0px;
+  }
+  .skills h2 {
+    margin-bottom: 30px;
+  }
+}

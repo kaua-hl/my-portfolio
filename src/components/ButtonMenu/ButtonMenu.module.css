@@ -1,6 +1,5 @@
 .buttonMenu {
-  position: absolute;
-  right: 0px;
+  position: fixed;
   top: 70px;
   z-index: 10;
   display: flex;
@@ -11,6 +10,7 @@
   width: 75px;
   height: 75px;
   transition: background 0.5s;
+  right: 100px;
 }
 
 .buttonMenu:hover {
@@ -19,17 +19,22 @@
 
 .buttonMenu span {
   display: block;
-  background: var(--c-2);
+  background: var(--c-5);
   width: 40px;
   height: 3px;
   margin: 3px;
   transition: transform 0.3s ease-in-out;
 }
 
+.buttonMenu.open {
+  background: #d8e2e2;
+}
+
 .open span {
   transform: rotate(45deg) translate3d(0px, 6px, 0px);
   position: relative;
   left: 4.5px;
+  color: var(--c-3);
 }
 
 .open span:nth-child(2) {

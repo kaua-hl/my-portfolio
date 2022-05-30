@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <footer className={`${styles.contact} cn-2`}>
+    <footer data-scroll-section className={`${styles.contact} cn-2`}>
       <div>
         <h2 className="tn-2">Contact</h2>
         <div className={styles.contact__content}>

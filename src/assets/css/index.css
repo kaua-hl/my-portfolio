@@ -1,2 +1,4 @@
+@import "./vendors/locomotive-scroll.css";
 @import "./base/index.css";
 @import "./utils/index.css";
+@import "./vendors/locomotive-scroll.css";
