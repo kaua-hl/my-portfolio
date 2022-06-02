@@ -54,6 +54,9 @@
   .contact h2 {
     font-size: 5.5rem;
   }
+  .contact__content div a {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 440px) {

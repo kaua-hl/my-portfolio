@@ -1,39 +1,18 @@
 .bgHeader {
+  background: #1e3d3a;
+  transition: height 0.6s;
+  height: 0vh;
+}
+
+.bgHeader.active {
   position: fixed;
   top: 0px;
   right: 0px;
-  background: #1e3d3a;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
   z-index: 1000;
-}
-
-.bgHeader {
-  animation: animes 0.3s forwards;
-}
-
-@keyframes animes {
-  from {
-    height: 0vh;
-  }
-  to {
-    height: 100vh;
-  }
-}
-
-.bgHeader.disabled {
-  animation: anime 0.3s forwards;
-}
-
-@keyframes anime {
-  from {
-    height: 100vh;
-  }
-  to {
-    height: 0vh;
-  }
 }
 
 .header {
