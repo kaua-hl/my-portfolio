@@ -6,7 +6,7 @@ import ImageProject3 from "../../../assets/img/3.jpg";
 
 const Projects = () => {
   return (
-    <section data-scroll-section className={styles.bgProjects}>
+    <section data-scroll-section className={styles.bgProjects} id="projects">
       <div className={`${styles.projects} cn-1`}>
         <h2 data-scroll data-scroll-offset="400" className="tn-2">
           Projects

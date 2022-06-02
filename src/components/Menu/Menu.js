@@ -2,21 +2,29 @@ import React from "react";
 import styles from "./Menu.module.css";
 import file from "../../assets/img/2.jpg";
 
-const Menu = ({ isMenuOpen }) => {
+const Menu = ({ isMenuOpen, closeMenu }) => {
   return (
     <nav className={`${styles.menu} ${!isMenuOpen && styles.disabled} cn-1`}>
       <ul className="tn-2">
-        <li>
-          <a href="#about">Sobre</a>
+        <li onClick={closeMenu}>
+          <a href="#about" data-scroll-to>
+            Sobre
+          </a>
         </li>
-        <li>
-          <a href="#projects">Projetos</a>
+        <li onClick={closeMenu}>
+          <a href="#projects" data-scroll-to>
+            Projetos
+          </a>
         </li>
-        <li>
-          <a href="#knowledge">Conhecimentos</a>
+        <li onClick={closeMenu}>
+          <a href="#knowledge" data-scroll-to>
+            Conhecimentos
+          </a>
         </li>
-        <li>
-          <a href="#contact">Contato</a>
+        <li onClick={closeMenu}>
+          <a href="#contact" data-scroll-to>
+            Contato
+          </a>
         </li>
         <li>
           <a href={file} download>
