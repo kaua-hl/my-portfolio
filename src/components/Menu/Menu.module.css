@@ -16,3 +16,15 @@
 .menu ul li:hover {
   color: var(--c-5);
 }
+
+@media (max-width: 840px) {
+  .menu ul li {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .menu ul li {
+    font-size: 2rem;
+  }
+}

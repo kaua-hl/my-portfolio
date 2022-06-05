@@ -28,6 +28,7 @@
   .bgSkills {
     display: block;
     padding: 100px 0px;
+    height: auto;
   }
   .skills h2 {
     margin-bottom: 30px;

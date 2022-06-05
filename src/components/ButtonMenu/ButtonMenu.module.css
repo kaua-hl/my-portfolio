@@ -42,3 +42,15 @@
   position: relative;
   left: 4.5px;
 }
+
+@media (max-width: 1140px) {
+  .buttonMenu {
+    right: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .buttonMenu {
+    right: 30px;
+  }
+}
