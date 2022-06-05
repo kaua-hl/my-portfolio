@@ -8,13 +8,15 @@ const About = () => {
         <h2 className="tn-3">About Me</h2>
         <div className={`${styles.about__content}`}>
           <p className="tn-4">
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy. Various versions
-            have evolved over the years, sometimes by accident, sometimes on
-            purpose (injected humour and the like).
+            Olá, meu nome é Kauã! Trabalho há dois anos desenvolvendo projetos
+            digitais utilizando HTML, CSS, JavaScript, entre outras ferramentas
+            como: React, Vue, TypeScript. Atualmente estou dedicando meus
+            estudos ao DDD, Solid e Design, espero que goste do meu portfólio,
+            entre em contato comigo caso queira conversar.
           </p>
-          <a href="#">Contact</a>
+          <a href="#contact" data-scroll-to>
+            Contact
+          </a>
         </div>
       </div>
     </article>
